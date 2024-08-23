@@ -12,6 +12,7 @@
             </div>
         </div>
         <div class="col-md-8">
+            {% for post in posts %}
             <div class="card shadow my-3">
                 <div class="card-body">
                     <div class="row">
@@ -19,51 +20,17 @@
                             <img src="" alt="img">
                         </div>
                         <div class="col-md-8">
-                            <small>20th June 2024</small>
+                            <small>{{ post.date_created }}</small>
                             <hr>
-                            <a class="h3" href="">First Post</a>
+                            <a class="h3" href="">{{ post.title }}</a>
                             <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde incidunt architecto dolore culpa laborum praesentium? Quidem, expedita asperiores voluptatibus in explicabo vero magni pariatur hic libero quasi rem delectus.
+                                {{ post.content }}
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="img">
-                        </div>
-                        <div class="col-md-8">
-                            <small>20th June 2024</small>
-                            <hr>
-                            <a class="h3" href="">First Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde incidunt architecto dolore culpa laborum praesentium? Quidem, expedita asperiores voluptatibus in explicabo vero magni pariatur hic libero quasi rem delectus.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="img">
-                        </div>
-                        <div class="col-md-8">
-                            <small>20th June 2024</small>
-                            <hr>
-                            <a class="h3" href="">First Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde incidunt architecto dolore culpa laborum praesentium? Quidem, expedita asperiores voluptatibus in explicabo vero magni pariatur hic libero quasi rem delectus.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
-    </class>
+    </div>
 </div>
 {% endblock %}
