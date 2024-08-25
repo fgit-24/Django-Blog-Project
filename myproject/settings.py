@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2%r(+vo_rg!q%fyo$z*5paxvqhsg+9+7qcud6dl%3kodvvrjza'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-fgit24-djangoblogprojec-2120s04d3ik.ws.codeinstitute-ide.net']
 
