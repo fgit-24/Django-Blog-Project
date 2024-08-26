@@ -44,16 +44,16 @@
     <div class="modal-body">
         <div class="row">
             <div class="col-md-4">
-                <img src="" alt="">
+                <img class="img-thumbnail" src="{{ user.profilemodel.image.url }}" alt="">
             </div>
                 <div class="col-md-8">
-                    <form method="POST">
+                    <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ u_form|crispy }}
                         {{ p_form|crispy }}
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary btn-sm">Save</button>
+                            <button type="submit" class="btn btn-primary btn-sm">Save</button>
                         </div>
                     </form>        
                 </div>
