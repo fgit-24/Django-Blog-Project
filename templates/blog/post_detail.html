@@ -1,0 +1,30 @@
+{% extends 'partials/base.html' %}
+{% block title %}Home Page{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 pt-3">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow my-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="" alt="profile-img">
+                        </div>
+                        <div class="col-md-8">
+                            <small>{{ post.date_created }}</small>
+                            <span><a class="btn btn-danger float-right btn-sm" href="">Delete</a></span>
+                            <span><a class="btn btn-primary mx-2 float-right btn-sm" href="">Edit</a></span>
+                            <hr>
+                            <h4>{{ post.title }}</h4>
+                            <p>
+                                {{ post.content }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
