@@ -2,17 +2,19 @@
 {% block title %}Sign Up{% endblock %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="container">
-    <div class="row mt-5 pt-3">
-        <div class="col-md-5 offset-md-6">
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <h3>Sign Up Page</h3>
-                    <form method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <input class="btn btn-primary btn-block" type="submit" value="Sign Up">
-                    </form>
+<div class="cover">
+    <div class="container">
+        <div class="row mt-5 pt-3">
+            <div class="col-md-5 offset-md-6">
+                <div class="card shadow my-3">
+                    <div class="card-body">
+                        <h3>Sign Up Page</h3>
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input class="btn btn-primary btn-block" type="submit" value="Sign Up">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
