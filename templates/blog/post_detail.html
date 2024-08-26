@@ -13,11 +13,12 @@
                         </div>
                         <div class="col-md-8">
                             <small>{{ post.date_created }}</small>
+                            {% if post.author.user == request.user %}
                             <span><a class="btn btn-danger float-right btn-sm" href="{% url 'blog-post-delete' post.id %}">Delete</a></span>
                             <span><a class="btn btn-primary mx-2 float-right btn-sm" href="{% url 'blog-post-edit' post.id %}">Edit</a></span>
+                            {% endif %}
                             <hr>
                             <h4>{{ post.title }}</h4>
-                            <p>
                                 {{ post.content }}
                             </p>
                         </div>
