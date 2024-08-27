@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.shortcuts import get_object_or_404
 from .models import PostModel
-from .forms import PostModelForm, PostUpdateForm
+from .forms import PostModelForm, PostUpdateForm, CommentForm
 
 # Create your views here.
 def index(request):
@@ -24,10 +24,20 @@ def index(request):
 
 
 def post_detail(request, pk):
-    post = get_object_or_404(PostModel, id=pk)
-    
+    post = PostModel.objects.get(id=pk)
+    if request.method == 'POST':
+        c_form = CommentForm(request.POST)
+        if c_form.is_valid():
+            instance = c_form.save(commit=False)
+            instance.user = request.user
+            instance.post = post
+            instance.save()
+            return redirect('blog-post-detail', pk=post.id)
+    else:
+        c_form = CommentForm()
     context = {
         'post': post,
+        'c_form': c_form,
     }
     
     return render(request, 'blog/post_detail.html', context)

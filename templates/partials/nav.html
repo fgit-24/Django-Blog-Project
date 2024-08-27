@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed">
   {% if request.user.is_authenticated  %}
   <div class="container">
-    <a class="navbar-brand text-white" href="#">Blog</a>
+    <a class="navbar-brand text-white" href=" {% url 'blog-index' %} ">Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
