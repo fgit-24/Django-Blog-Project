@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
 # Create your models here.
 
 
@@ -12,12 +11,12 @@ class PostModel(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-date_created']
+        ordering = ('-date_created',)
 
     def comment_count(self):
         return self.comment_set.all().count()
 
-    def comment(self):
+    def comments(self):
         return self.comment_set.all()
 
     def __str__(self):

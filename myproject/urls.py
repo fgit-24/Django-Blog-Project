@@ -1,8 +1,8 @@
-"""
-URL configuration for myproject project.
+
+"""postscribers URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.1/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -25,6 +25,6 @@ urlpatterns = [
     path('', include('users.urls')),
 ]
 
-if settings.DEBUG:   
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
-                            document_root=settings.MEDIA_ROOT)
+                          document_root=settings.MEDIA_ROOT)

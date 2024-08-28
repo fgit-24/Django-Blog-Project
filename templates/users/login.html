@@ -6,9 +6,9 @@
     <div class="container">
         <div class="row mt-5 pt-3">
             <div class="col-md-5 offset-md-6">
-                <div class="card shadow my-3">
+                <div class="card my-3 shadow">
                     <div class="card-body">
-                        <h3>Login Page</h3>
+                        <h4>Login Page</h4>
                         <hr>
                         <form method="POST">
                             {% csrf_token %}
@@ -16,7 +16,7 @@
                             <input class="btn btn-primary btn-block" type="submit" value="Login">
                         </form>
                         <hr>
-                        <div class="text-center my-3" >
+                        <div class="text-center my-3">
                             <a href="{% url 'password_reset' %}">Forget Password</a>
                         </div>
                         <hr>
