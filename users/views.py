@@ -53,11 +53,11 @@ def newsletter_subscribe(request):
             email = form.cleaned_data['email']
             NewsletterSubscriber.objects.create(email=email)
             messages.success(request, 'Subscription successful!')
-            return redirect('newsletter-subscribe')
+            return redirect('users/newsletter-subscribe')
     else:
         form = NewsletterForm()
     
-    return render(request, 'newsletter_subscribe.html', {'form': form})
+    return render(request, 'users/newsletter_subscribe.html', {'form': form})
 
 
 def contact(request):
@@ -66,10 +66,10 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent successfully!')
-            return redirect('contact')
+            return redirect('users/contact')
     else:
         form = ContactForm()
     
-    return render(request, 'contact.html', {'form': form})
+    return render(request, 'users/contact.html', {'form': form})
 
 
