@@ -3,6 +3,10 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .forms import NewsletterForm
+from .models import NewsletterSubscriber
+from .forms import ContactForm
+from .models import ContactMessage
 import os
 # Create your views here.
 
@@ -42,9 +46,30 @@ def profile(request):
     return render(request, 'users/profile.html', context)
 
 
+def newsletter_subscribe(request):
+    if request.method == 'POST':
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            NewsletterSubscriber.objects.create(email=email)
+            messages.success(request, 'Subscription successful!')
+            return redirect('newsletter-subscribe')
+    else:
+        form = NewsletterForm()
+    
+    return render(request, 'newsletter_subscribe.html', {'form': form})
+
 
 def contact(request):
     if request.method == 'POST':
-        message = ContactMessage(models.Model)
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message has been sent successfully!')
+            return redirect('contact')
+    else:
+        form = ContactForm()
+    
+    return render(request, 'contact.html', {'form': form})
 
 

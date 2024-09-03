@@ -1,6 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import ProfileModel
+from .models import ProfileModel, ContactMessage, NewsletterSubscriber
 from django import forms
 
 
@@ -34,3 +34,15 @@ class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = ProfileModel
         fields = ['image']
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = ContactMessage
+        fields = ['name', 'email', 'subject', 'message']
+
+
+class NewsletterForm(forms.ModelForm):
+    class Meta:
+        model = NewsletterSubscriber
+        fields = ['email']
