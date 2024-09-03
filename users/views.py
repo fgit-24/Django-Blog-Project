@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 import os
 # Create your views here.
 
@@ -29,6 +30,7 @@ def profile(request):
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
+            messages.success(request, 'Edited profile successfully!')
             return redirect('users-profile')
     else:
         u_form = UserUpdateForm(instance=request.user)

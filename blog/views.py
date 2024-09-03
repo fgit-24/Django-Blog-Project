@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from .models import PostModel
 from .forms import PostModelForm, PostUpdateForm, CommentForm
 from django.contrib.auth.decorators import login_required
@@ -16,6 +16,7 @@ def index(request):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
+            messages.success(request, 'Posted successfully!')
             return redirect('blog-index')
     else:
         form = PostModelForm()
@@ -37,6 +38,7 @@ def post_detail(request, pk):
             instance.user = request.user
             instance.post = post
             instance.save()
+            messages.success(request, 'Comment posted successfully!')
             return redirect('blog-post-detail', pk=post.id)
     else:
         c_form = CommentForm()
@@ -56,6 +58,7 @@ def post_edit(request, pk):
     if request.method == 'POST':
         form = PostUpdateForm(request.POST, instance=post)
         if form.is_valid():
+            messages.success(request, 'Post successfully edited!')
             form.save()
             return redirect('blog-post-detail', pk=post.id)
     else:
@@ -69,9 +72,10 @@ def post_edit(request, pk):
 
 @login_required
 def post_delete(request, pk):
-    post = PostModel.objects.get(id=pk)
+    post = get_object_or_404(PostModel, id=pk)
     if request.method == 'POST':
         post.delete()
+        messages.success(request, 'Post deleted!')
         return redirect('blog-index')
     context = {
         'post': post
