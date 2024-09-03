@@ -11,6 +11,22 @@ class ProfileModel(models.Model):
     def __str__(self):
         return self.user.username
 
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(
+        validators=[EmailValidator()],
+        error_messages={
+            'invalid': 'Enter a valid email address.'
+        }
+    )
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+    sent_at = models.DateTimeField(default=timezone.now)
+    is_read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"Message from {self.name} - {self.subject}"
+
 
 class NewsletterSubscriber(models.Model):
     email = models.EmailField(
