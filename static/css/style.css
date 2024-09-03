@@ -1,0 +1,9 @@
+.cover {
+    background: url('static/images/background.jpg')
+}
+
+main, #alerts {
+     margin-top: 5em;
+}
+
+

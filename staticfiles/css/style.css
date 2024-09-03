@@ -1,3 +1,13 @@
 .cover {
-    background: url('/media/background.jpg')
+    background: url('static/images/background.jpg')
+}
+
+main, #alerts {
+     margin-top: 10em;
+}
+
+* {
+    background-color: black;
+    outline: lime;
+    border: 1px solid red;
 }

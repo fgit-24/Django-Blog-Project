@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import PostModel
 from .forms import PostModelForm, PostUpdateForm, CommentForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 # Create your views here.
@@ -49,6 +50,9 @@ def post_detail(request, pk):
 @login_required
 def post_edit(request, pk):
     post = PostModel.objects.get(id=pk)
+    if not post.author == request.user:
+        messages.error(request, 'Access denied, not your post!')
+        return redirect('blog-post-detail', pk=post.id)
     if request.method == 'POST':
         form = PostUpdateForm(request.POST, instance=post)
         if form.is_valid():
