@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ProfileModel, ContactMessage
+from .models import ProfileModel, ContactMessage, NewsletterSubscriber
 
 # Register your models here.
 admin.site.register(ProfileModel)
@@ -11,4 +11,8 @@ class ContactMessageAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email', 'subject', 'message')
     ordering = ('-sent_at',)
 
-    
+
+@admin.register(NewsletterSubscriber)
+class NewsletterSubscriberAdmin(admin.ModelAdmin):
+    list_display = ('email', 'subscribed_at')
+    search_fields = ('email',)

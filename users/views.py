@@ -46,3 +46,5 @@ def profile(request):
 def contact(request):
     if request.method == 'POST':
         message = ContactMessage(models.Model)
+
+
