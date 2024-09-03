@@ -41,3 +41,8 @@ def profile(request):
     }
     return render(request, 'users/profile.html', context)
 
+
+
+def contact(request):
+    if request.method == 'POST':
+        message = ContactMessage(models.Model)
