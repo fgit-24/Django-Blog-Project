@@ -46,18 +46,18 @@ def profile(request):
     return render(request, 'users/profile.html', context)
 
 
-def newsletter_subscribe(request):
+def newsletter(request):
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
         if form.is_valid():
             email = form.cleaned_data['email']
             NewsletterSubscriber.objects.create(email=email)
             messages.success(request, 'Subscription successful!')
-            return redirect('users/newsletter-subscribe')
+            return redirect('users/newsletter')
     else:
         form = NewsletterForm()
     
-    return render(request, 'users/newsletter_subscribe.html', {'form': form})
+    return render(request, 'users/newsletter.html', {'form': form})
 
 
 def contact(request):

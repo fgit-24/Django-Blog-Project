@@ -1,6 +1,12 @@
 <footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">Contact Page</span>
-    <span class="text-muted">Sign up for our free newsletter!</span>
-  </div>
-</footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="{% url 'contact' %}" class="text-muted">Contact Page</a>
+        </div>
+        <div class="col-6 text-end">
+          <a href="{% url 'newsletter' %}" class="text-muted">Sign up for our free newsletter!</a>
+        </div>
+      </div>
+    </div>
+  </footer>
