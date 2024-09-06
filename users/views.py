@@ -3,12 +3,12 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.db import IntegrityError
 from .forms import NewsletterForm
 from .models import NewsletterSubscriber
 from .forms import ContactForm
 from .models import ContactMessage
 import os
-# Create your views here.
 
 
 def sign_up(request):
@@ -50,13 +50,11 @@ def newsletter(request):
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
         if form.is_valid():
-            email = form.cleaned_data['email']
-            NewsletterSubscriber.objects.create(email=email)
+            form.save()
             messages.success(request, 'Subscription successful!')
-            return redirect('users/newsletter')
+            return redirect('newsletter')
     else:
         form = NewsletterForm()
-    
     return render(request, 'users/newsletter.html', {'form': form})
 
 

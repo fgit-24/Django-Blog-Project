@@ -14,5 +14,4 @@ class ContactMessageAdmin(admin.ModelAdmin):
 
 @admin.register(NewsletterSubscriber)
 class NewsletterSubscriberAdmin(admin.ModelAdmin):
-    list_display = ('email', 'subscribed_at')
-    search_fields = ('email',)
+    list_display = ('email', 'name')

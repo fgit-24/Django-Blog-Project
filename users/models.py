@@ -29,14 +29,9 @@ class ContactMessage(models.Model):
 
 
 class NewsletterSubscriber(models.Model):
-    email = models.EmailField(
-        validators=[EmailValidator()],
-        unique=True,
-        error_messages={
-            'unique': 'A subscriber with this email address already exists.'
-        }
-    )
-    subscribed_at = models.DateTimeField(default=timezone.now)
+    email = models.EmailField(unique=True)
+    name = models.CharField(max_length=255, blank=True, null=True)
+    subscribed_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.email

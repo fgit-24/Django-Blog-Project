@@ -45,4 +45,10 @@ class ContactForm(forms.ModelForm):
 class NewsletterForm(forms.ModelForm):
     class Meta:
         model = NewsletterSubscriber
-        fields = ['email']
+        fields = ['email', 'name']
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if NewsletterSubscriber.objects.filter(email=email).exists():
+            raise forms.ValidationError('This email is already subscribed.')
+        return email
