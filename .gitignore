@@ -1,0 +1,22 @@
+# Django
+*.sqlite3
+db.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Static files
+static/
+media/
+
+local_settings.py

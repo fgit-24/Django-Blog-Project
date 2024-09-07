@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 import os
 
 
@@ -47,6 +48,8 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     "crispy_forms",
     "crispy_bootstrap4",
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -133,11 +136,19 @@ LOGIN_REDIRECT_URL = 'blog-index'
 
 LOGIN_URL = 'users-login'
 
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dn9l0cxcv',
+    'API_KEY': '119956345398773',
+    'API_SECRET': 'eI-tmJDtJaFWclKF7RUxvqabqY4',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-
-MEDIA_ROOT = (BASE_DIR / 'media')
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',

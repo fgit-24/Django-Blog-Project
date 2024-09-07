@@ -2,6 +2,8 @@
 {% block title %}Profile Page{% endblock %}
 {% load crispy_forms_tags %}
 {% block content %}
+{% load cloudinary %}
+
 <div class="container">
     <div class="row mt-5 pt-3">
         <div class="col-md-6 offset-md-3">
@@ -18,7 +20,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-4">
-                            <img class="img-thumbnail" src="{{ user.profilemodel.image.url }}" alt="profile-img">
+                            <img class="img-thumbnail" src="{% cloudinary_url user.profilemodel.image %}" alt="profile-img">
                         </div>
                         <div class="col-md-8">
                             <h4>Name: {{ user.username }}</h4>
@@ -44,7 +46,11 @@
     <div class="modal-body">
         <div class="row">
             <div class="col-md-4">
-                <img class="img-thumbnail" src="{{ user.profilemodel.image.url }}" alt="">
+                {% if profile.image %}
+                    <img class="img-thumbnail" src="{% cloudinary_url profile.image %}" alt="{{ profile.user.username }}">
+                {% else %}
+                    <img class="img-thumbnail" src="{% cloudinary_url 'https://res.cloudinary.com/dn9l0cxcv/image/upload/v1725693556/default_djtnx9.jpg' %}" alt="default-profile-img">
+                {% endif %}
             </div>
                 <div class="col-md-8">
                     <form method="POST" enctype="multipart/form-data">
