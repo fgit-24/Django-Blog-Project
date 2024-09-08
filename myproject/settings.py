@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from decouple import config
+import environ
 import os
 
 
@@ -137,11 +138,16 @@ LOGIN_REDIRECT_URL = 'blog-index'
 LOGIN_URL = 'users-login'
 
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dn9l0cxcv',
-    'API_KEY': '119956345398773',
-    'API_SECRET': 'eI-tmJDtJaFWclKF7RUxvqabqY4',
+env = environ.Env()
+
+environ.Env.read_env()
+
+CLOUDINARY = {
+    'CLOUD_NAME': env('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': env('CLOUDINARY_API_KEY'),
+    'API_SECRET': env('CLOUDINARY_API_SECRET'),
 }
+
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
