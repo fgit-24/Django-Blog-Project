@@ -139,7 +139,6 @@ LOGIN_URL = 'users-login'
 
 
 env = environ.Env()
-
 environ.Env.read_env()
 
 CLOUDINARY = {
