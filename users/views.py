@@ -65,7 +65,7 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent successfully!')
-            return redirect('users/contact')
+            return redirect('contact')
     else:
         form = ContactForm()
     
