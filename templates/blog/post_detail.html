@@ -12,7 +12,7 @@
                             <img class="img-thumbnail" src="{{ post.author.profilemodel.image.url }}" alt="profile-img">
                         </div>
                         <div class="col-md-8">
-                            <small>{{ post.date_created }}</small>
+                            <small style="font-size: 10px;">{{ post.date_created }}</small>
                             {% if post.author == request.user %}
                             <span><a class="btn btn-danger float-right btn-sm"
                                     href="{% url 'blog-post-delete' post.id %}">Delete</a></span>
