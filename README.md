@@ -20,22 +20,21 @@ Everything is clearly laid out, and interactions are acknowledged with feedback 
 
 ## Colour Scheme
 
-![screenshot](documentation/mockup.png)
-Colors Scheme
+![screenshot](documentation/images/color-sheme.png)
 
-Explain your colours and the colour scheme.
-
+- `#007BFF` used for navigation.
 - `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
+- `#28A745` used for buttons.
+- `#D9D9D9` used for secondary highlights.
+- `#FFFFFF` used for secondary text.
 
 ## User Stories
 
-![screenshot](documentation/mockup.png)
-Screenshot
+![screenshot](documentation/images/project01.png)
 
+![screenshot](documentation/images/project03.png)
+
+![screenshot](documentation/images/project02.png)
 
 ## Wireframes
 
@@ -88,11 +87,21 @@ etc.
 
 ## Features
 
-What makes my oage special
+My focus was on implementing CRUD-functionality.
+
+CRUD stands for 'create, read, update, and 
+ delete' which are the four basic operations used in web applications to manage data.
+ 
+ In my project, these operations allow users to:
+
+- Create new entries (like adding a new blog post).
+- Read or view existing entries (like viewing all blog posts).
+- Update existing entries (like editing a post).
+- Delete entries (like removing a post).
 
 ### Future Features
 
-Text
+In the future I plan to implement thumbnails or media previews for posts on the main page so that users get a visual sense of the content.
 
 
 ## Tools & Technologies Used
@@ -117,46 +126,6 @@ Text
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-```
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-A more comprehensive ERD can be auto-generated once you're
-at the end of your development stages, just before you submit.
-Follow the steps below to obtain a thorough ERD that you can include.
-Feel free to leave the steps in the README for future use to yourself.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
 The steps taken were as follows:
@@ -177,7 +146,7 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd](documentation/erd.png)
+![erd](documentation/images/erd.png)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
