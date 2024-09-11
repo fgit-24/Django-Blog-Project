@@ -40,13 +40,22 @@ Everything is clearly laid out, and interactions are acknowledged with feedback 
 
 ### Mobile
 
+![screenshot](documentation/images/wireframes/wireframe_mobile.jpg)
 
 ### Tablet Wireframes
 
+![screenshot](documentation/images/wireframes/wireframe_tablet.jpg)
 
 ### Desktop Wireframes
 
 ![screenshot](documentation/images/wireframes/wireframe_desktop_sketch.jpg)
+
+
+
+
+
+
+
 
 
 ## Features
