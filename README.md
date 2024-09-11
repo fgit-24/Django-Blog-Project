@@ -155,17 +155,8 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 > [!NOTE]  
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
+
 ## Deployment
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 The live deployed application can be found deployed on [Heroku](https://django-project-postit-04c21e951999.herokuapp.com).
 
@@ -184,7 +175,6 @@ To obtain my own Postgres Database from Code Institute, I followed these steps:
 > if you plan to clone/fork this repository.
 > - Code Institute students are allowed a maximum of 8 databases.
 > - Databases are subject to deletion after 18 months.
-
 
 ### Heroku Deployment
 
