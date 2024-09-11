@@ -36,6 +36,7 @@ Everything is clearly laid out, and interactions are acknowledged with feedback 
 
 ![screenshot](documentation/images/project02.png)
 
+
 ## Wireframes
 
 ### Mobile
@@ -49,13 +50,6 @@ Everything is clearly laid out, and interactions are acknowledged with feedback 
 ### Desktop Wireframes
 
 ![screenshot](documentation/images/wireframes/wireframe_desktop_sketch.jpg)
-
-
-
-
-
-
-
 
 
 ## Features
@@ -125,9 +119,257 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 
 ## Testing
 
-> [!NOTE]  
-> For all testing, please refer to the [TESTING.md](TESTING.md) file.
+### Navigation
 
+I tested the site's navigation by moving between all the main sections (home, about, portfolio, contact) and verified that the links were directing to the correct destinations. The transitions between pages were smooth with no lag or delay. The URL updates correctly, and the navigation bar consistently highlights the current section.
+All internal and external links were tested, and they functioned as expected, taking the user to the appropriate pages without errors.
+Responsive Design:
+
+### Compatibility Testing
+
+To ensure the site worked seamlessly across multiple devices, I tested it on different screen sizes, including desktops, tablets, and mobile phones. The design automatically adjusted to fit smaller screens without compromising the layout, readability, or functionality. The images and text resized appropriately, and there were no issues with overflowing or hidden content.
+
+### Contact & Newsletter
+
+I filled out the contact and newsletter form multiple times to verify that submissions were processed correctly. Upon submission, the user receives a clear confirmation message that their inquiry was successfully sent. On the backend, I received the form submissions in my designated email account without delay, ensuring the process worked flawlessly.
+
+
+### Browser Testing
+
+I tested the site across multiple browsers, including Chrome, Firefox, Safari, and Edge, to ensure consistent functionality and appearance. In each browser, the site loaded without any noticeable differences in layout, features, or performance. Interactive elements, such as buttons and navigation links, behaved as expected, and no browser-specific issues were encountered.
+Device Compatibility:
+
+The site was thoroughly tested on a range of devices, including desktop computers, laptops, tablets, and mobile phones (iPhone and Android). Across all devices, the site maintained its responsive design, and there were no issues with functionality or display. The images, text, and buttons adjusted well to different screen sizes, providing a consistent and optimized experience.
+Performance Testing:
+
+### Speed and Load Testing
+
+Using tools like PageSpeed Insights and GTmetrix, I measured the site’s load time across both desktop and mobile platforms. The results were well within acceptable ranges, with quick loading times. I made further optimizations to reduce image sizes and cache static resources, improving the overall page speed for both desktop and mobile users.
+
+Scalability Testing
+To ensure the site could handle increased traffic, I performed simulated load tests. These tests indicated that the site remained stable under high user loads, without experiencing slowdowns or server crashes. This demonstrated that the site can scale effectively as traffic grows.
+
+### Regression Testing
+
+After implementing fixes based on performance testing and user feedback (such as optimizing images and refining the mobile layout), I conducted regression testing to verify that no previous features were affected. Each key functionality—such as navigation, portfolio display, and the contact form—continued to work smoothly after the updates. No new issues were introduced, confirming that the improvements did not impact existing features.
+
+### Documentation and Logs
+
+Throughout the testing process, I documented every step, including the tools used, test cases, results, and any bugs encountered. This systematic approach ensured that all issues were tracked and resolved. Additionally, each update or fix was logged to maintain a clear record of changes and their impact on the site’s functionality.
+User Feedback Incorporation:
+User feedback played a significant role in shaping the final design and functionality of the site. For instance, users suggested that page load times on mobile could be faster, and I implemented optimizations based on this input. Additionally, based on user feedback, I made adjustments to the layout on smaller screens to enhance readability and interaction. These changes resulted in a more polished and user-friendly experience across all devices.
+
+
+## Code Validation
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | post_delete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | post_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | post_edit.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | login.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | logout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | password_reset.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | password_reset_complete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | password_reset_confirm.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | password_reset_done.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | sign_up.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| static | style.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| Directory | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| blog | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| blog | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| blog | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| blog | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| blog | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| myproject | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| myproject | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/signals.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| users | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+
+## Browser Compatibility
+
+
+- [Chrome](https://www.google.com/chrome)
+- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
+- [Edge](https://www.microsoft.com/edge)
+
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Home | About | Contact | etc | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
+| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
+
+
+## Responsiveness
+
+- Mobile
+- Tablet
+- Desktop
+
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | About | Contact | etc | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
+| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
+| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
+| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
+| repeat for any other tested devices | x | x | x | x | x |
+
+
+
+
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
+| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
+| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
+| x | x | x | repeat for any other tested pages/sizes |
+
+
+## Defensive Programming
+
+Forms:
+- Users cannot submit an empty form
+- Users must enter valid email addresses
+
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| Home | | | | |
+| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Home link in navbar | Redirection to Home page | Pass | |
+| Gallery | | | | |
+| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
+| | Load gallery images | All images load as expected | Pass | |
+| Contact | | | | |
+| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
+| Sign Up | | | | |
+| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password (twice) | Field will only accept password format | Pass | |
+| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
+| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| Log In | | | | |
+| | Click on the Login link | Redirection to Login page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password | Field will only accept password format | Pass | |
+| | Click Login button | Redirects user to home page | Pass | |
+| Log Out | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Profile | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
+| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+
+
+
+### Python (Unit Testing)
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+
+Adjust the code below (file names, etc.) to match your own project files/folders.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+I have used Django's built-in unit testing framework to test the application functionality.
+
+In order to run the tests, I ran the following command in the terminal each time:
+
+`python3 manage.py test name-of-app`
+
+To create the coverage report, I would then run the following commands:
+
+`pip3 install coverage`
+
+`pip3 freeze --local > requirements.txt`
+
+`coverage run --omit=*/site-packages/*,*/migrations/*,*/__init__.py,env.py manage.py test`
+
+`coverage report`
+
+To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
+
+`coverage html`
+
+`python3 -m http.server`
+
+Below are the results from the various apps on my application that I've tested:
+
+| App | File | Coverage | Screenshot |
+| --- | --- | --- | --- |
+| Bag | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-bag-forms.png) |
+| Bag | test_models.py | 89% | ![screenshot](documentation/tests/py-test-bag-models.png) |
+| Bag | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-bag-urls.png) |
+| Bag | test_views.py | 71% | ![screenshot](documentation/tests/py-test-bag-views.png) |
+| Checkout | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-checkout-forms.png) |
+| Checkout | test_models.py | 89% | ![screenshot](documentation/tests/py-test-checkout-models.png) |
+| Checkout | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-checkout-urls.png) |
+| Checkout | test_views.py | 71% | ![screenshot](documentation/tests/py-test-checkout-views.png) |
+| Home | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-home-forms.png) |
+| Home | test_models.py | 89% | ![screenshot](documentation/tests/py-test-home-models.png) |
+| Home | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-home-urls.png) |
+| Home | test_views.py | 71% | ![screenshot](documentation/tests/py-test-home-views.png) |
+| Products | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-products-forms.png) |
+| Products | test_models.py | 89% | ![screenshot](documentation/tests/py-test-products-models.png) |
+| Products | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-products-urls.png) |
+| Products | test_views.py | 71% | ![screenshot](documentation/tests/py-test-products-views.png) |
+| Profiles | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-profiles-forms.png) |
+| Profiles | test_models.py | 89% | ![screenshot](documentation/tests/py-test-profiles-models.png) |
+| Profiles | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-profiles-urls.png) |
+| Profiles | test_views.py | 71% | ![screenshot](documentation/tests/py-test-profiles-views.png) |
+
+
+## Unfixed Bugs
+
+Unfixed Bugs
 
 ## Deployment
 
@@ -298,7 +540,7 @@ You can fork this repository by using the following steps:
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
+| [YouTube](https://www.youtube.com/@KenBroTech) | General functionality and blog building | I've made many modifications, and I created the contact and newsletter models from scratch. |
 
 ## Acknowledgements
 
