@@ -322,16 +322,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Index | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_index.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Contact | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_contact.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Newsletter | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_newsletter.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Signup | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_signup.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Login | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_login.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Logout | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_logout.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Profile | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Edit | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_edit.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Delete | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_delete.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Index | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_index.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_index.png) | Works as expected |
+| Contact | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_contact.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_contact.png) | Works as expected |
+| Newsletter | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_newsletter.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_newsletter.png) | Works as expected |
+| Signup | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_signup.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_signup.png) | Works as expected |
+| Login | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_login.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_login.png) | Works as expected |
+| Logout | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_logout.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_logout.png) | Works as expected |
+| Profile | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_profile_detail.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_edit.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_edit.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_delete.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_delete.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_profile_detail.png) | Works as expected |
 
 
 ## Defensive Programming
