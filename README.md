@@ -8,7 +8,7 @@ In addition, this platform includes a contact form and allows users to sign up f
 
 Mockup Image
 ![screenshot](documentation/mockup.png)
-https://ui.dev/amiresponsive?url=https://django-project-postit-04c21e951999.herokuapp.com
+https://ui.dev/amiresponsive?url=https://django-project-postit-04c21e951999.herokuapp.com/
 
 
 # UX
@@ -239,10 +239,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | templates | login.html | ![screenshot](documentation/testing/html/login.png) | |
 | templates | logout.html | ![screenshot](documentation/testing/html/logout.png) | |
 | templates | newsletter.html | ![screenshot](documentation/testing/html/newsletter.png) | |
-| templates | password_reset.html | ![screenshot](documentation/testing/html/password_reset.png) | |
-| templates | password_reset_complete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | password_reset_confirm.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | password_reset_done.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | profile.html | ![screenshot](documentation/testing/html/profile.png) | |
 | templates | sign_up.html | ![screenshot](documentation/testing/html/sign_up.png) | |
 
@@ -287,11 +283,18 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
+| Page | Google Chrome | Microsoft Edge | Mozialla Firefox | Notes |
+| --- | --- | --- | --- | --- |
+| Index | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_index.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Contact | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_contact.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_newsletter.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Signup | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_sign_up.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Login | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_login.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Logout | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_logout.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Profile | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_edit_post.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_delete_post.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
 
 
 ## Responsiveness
@@ -308,7 +311,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
 | 
 
 
@@ -321,9 +323,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) |  |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) |  |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) |  |
+| Index | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Contact | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Signup | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Login | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Logout | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Profile | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
 
 
 ## Defensive Programming
