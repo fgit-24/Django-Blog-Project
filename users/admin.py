@@ -4,6 +4,7 @@ from .models import ProfileModel, ContactMessage, NewsletterSubscriber
 # Register your models here.
 admin.site.register(ProfileModel)
 
+
 @admin.register(ContactMessage)
 class ContactMessageAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'subject', 'sent_at', 'is_read')
