@@ -290,7 +290,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Signup | ![screenshot](documentation/testing/chrome/chrome_sign_up.png) | ![screenshot](documentation/testing/edge/edge_sign_up.png) | ![screenshot](documentation/testing/firefox/mozilla_signup.png) | Works as expected |
 | Login | ![screenshot](documentation/testing/chrome/chrome_login.png) | ![screenshot](documentation/testing/edge/edge_login.png) | ![screenshot](documentation/testing/firefox/mozilla_login.png) | Works as expected |
 | Logout | ![screenshot](documentation/testing/chrome/chrome_logout.png) | ![screenshot](documentation/testing/edge/edge_logout.png) | ![screenshot](documentation/testing/firefox/mozilla_logout.png) | Works as expected |
-| Profile | ![screenshot](documentation/testing/chrome/chrome_profile.png) | ![screenshot](documentation/testing/edge/edge_profile.png) | ![screenshot](documentation/testing/firefox/mozilla_profile.png) | Works as expected |
+| Profile | ![screenshot](documentation/testing/chrome/chrome_profile.png) | ![screenshot](documentation/testing/edge/edge_profile.png) | ![screenshot](documentation/testing/firefox/mozilla_profile_detail.png) | Works as expected |
 | Post Edit | ![screenshot](documentation/testing/chrome/chrome_post_edit.png) | ![screenshot](documentation/testing/edge/edge_edit_post.png) | ![screenshot](documentation/testing/firefox/mozilla_post_detail.png) | Works as expected |
 | Post Delete | ![screenshot](documentation/testing/chrome/chrome_post_delete.png) | ![screenshot](documentation/testing/edge/edge_delete_post.png) | ![screenshot](documentation/testing/firefox/mozilla_post_delete.png) | Works as expected |
 | Post Detail | ![screenshot](documentation/testing/chrome/chrome_post_detail.png) | ![screenshot](documentation/testing/edge/edge_profile_detail.png) | ![screenshot](documentation/testing/firefox/mozilla_post_detail.png) | Works as expected |
@@ -322,16 +322,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Index | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Contact | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Signup | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Login | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Logout | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Profile | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Edit | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Delete | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Index | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_index.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Contact | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_contact.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Newsletter | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_newsletter.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Signup | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_signup.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Login | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_login.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Logout | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_logout.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Profile | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_edit.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_delete.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
 
 
 ## Defensive Programming
