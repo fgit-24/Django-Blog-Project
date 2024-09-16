@@ -231,20 +231,20 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | post_delete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | post_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | post_edit.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | login.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | logout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | password_reset.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | index.html | ![screenshot](documentation/testing/html/index.png) | |
+| templates | post_delete.html | ![screenshot](documentation/testing/html/post_delete.png) | |
+| templates | post_detail.html | ![screenshot](documentation/testing/html/post_edit.png) | |
+| templates | post_edit.html | ![screenshot](documentation/testing/html/contact.png) | |
+| templates | contact.html | ![screenshot](documentation/testing/html/login.png) | |
+| templates | login.html | ![screenshot](documentation/testing/html/login.png) | |
+| templates | logout.html | ![screenshot](documentation/testing/html/logout.png) | |
+| templates | newsletter.html | ![screenshot](documentation/testing/html/newsletter.png) | |
+| templates | password_reset.html | ![screenshot](documentation/testing/html/password_reset.png) | |
 | templates | password_reset_complete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | password_reset_confirm.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | password_reset_done.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | sign_up.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | profile.html | ![screenshot](documentation/testing/html/profile.png) | |
+| templates | sign_up.html | ![screenshot](documentation/testing/html/sign_up.png) | |
 
 
 ### CSS
