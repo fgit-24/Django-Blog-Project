@@ -307,16 +307,16 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Page | Mobile | Tablet | Desktop | Notes |
 | --- | --- | --- | --- | --- |
-| Index | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_index.png) | Works as expected [screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_index.png) | Works as expected |
+| Index | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_index.png) | Works as expected | (documentation/testing/lighthouse/desktop/lighthouse_desktop_index.png) | Works as expected |
 | Contact | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_contact.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_contact.png) | ![screenshot](documentation/testing/responsiveness/desktop/desktop_responsiveness_contact.png) | Works as expected |
 | Newsletter | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_newsletter.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_newsletter.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_newsletter.png) | Works as expected |
 | Signup | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_sign_up.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_sign_up.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_sign_up.png) | Works as expected |
 | Login | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_login.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_login.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_login.png) | Works as expected |
-| Logout | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_logout.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_logout.png) | Works as expected |
+| Logout | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_logout.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_logout.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_logout.png) | Works as expected |
 | Profile | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_profile_detail.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_detail.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_post_detail.png) | Works as expected |
 | Post Edit | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_edit.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_edit.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_post_edit.png) | Works as expected |
 | Post Delete | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_delete.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_delete.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_delete.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_profile_detail.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_profile_detail.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_detail.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_post_detail.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -333,7 +333,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Profile | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_profile_detail.png) | Works as expected |
 | Post Edit | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_edit.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_edit.png) | Works as expected |
 | Post Delete | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_delete.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_delete.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_detail.png) | Works as expected |
 
 
 ## Defensive Programming
@@ -348,13 +348,15 @@ Forms:
 | Home | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
+| Newsletter | | | | |
+| | Click on Newsletter link in navbar | Redirection to Contact page | Pass | |
+| | Enter name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Feld will accept emaill address | Pass |
 | Contact | | | | |
 | | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter subject | Field will accept freeform text | Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
 | | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
 | Sign Up | | | | |
@@ -374,13 +376,20 @@ Forms:
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+| Posts | | | | |
+| | Click on Post | User will be redirected to the Profile page | Pass | |
+| | Click on Post button | User will post | Pass | |
+| | Title message in textarea | Field will accept freeform text | Pass | |
+| | Content message in textarea | Field will accept freeform text | Pass | |
+| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
+| | Click on the Delete button | User will be redirected to the edit profile page | Pass | |
+
 
 
 ## Unfixed Bugs
 
-Unfixed Bugs
+Improving responsiveness for footer
 
 ## Deployment
 
