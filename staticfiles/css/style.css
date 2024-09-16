@@ -6,6 +6,10 @@ main, #alerts {
      margin-top: 10em;
 }
 
+.navbar-toggler {
+    margin-left: auto;
+}
+
 * {
     background-color: black;
     outline: lime;
