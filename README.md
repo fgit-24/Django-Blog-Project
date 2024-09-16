@@ -261,20 +261,20 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| blog | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| blog | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| blog | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| blog | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| blog | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| myproject | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Line 41 is CSRF_TRUSTED_ORIGINS |
-| myproject | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/signals.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| users | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| blog | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/admin.py) | ![screenshot](documentation/testing/python/blog_admin.png) | |
+| blog | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/forms.py) | ![screenshot](documentation/testing/python/blog_forms.png) | |
+| blog | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/models.py) | ![screenshot](documentation/testing/python/blog_models.png) | |
+| blog | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/urls.py) | ![screenshot](documentation/testing/python/manage.png) | |
+| blog | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/blog/views.py) | ![screenshot](documentation/testing/python/blog_views.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/manage.py) | ![screenshot](documentation/testing/python/manage.png) | |
+| myproject | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/settings.py) | ![screenshot](documentation/testing/python/my_project_settings.png) |Line 41 is CSRF_TRUSTED_ORIGINS |
+| myproject | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/myproject/urls.py) | ![screenshot](documentation/testing/python/my_project_urls.png) | |
+| users | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/admin.py) | ![screenshot](documentation/testing/python/users_admin.png) | |
+| users | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/forms.py) | ![screenshot](documentation/testing/python/users_forms.png) | |
+| users | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/models.py) | ![screenshot](documentation/testing/python/user_models.png) | |
+| users | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/signals.py) | ![screenshot](documentation/testing/python/users_signals.png) | |
+| users | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/urls.py) | ![screenshot](documentation/testing/python/users_urls.png) | |
+| users | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/fgit-24/Django-Blog-Project/main/users/views.py) | ![screenshot](documentation/testing/python/users_views.png) | |
 
 
 ## Browser Compatibility
