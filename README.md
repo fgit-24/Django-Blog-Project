@@ -305,16 +305,18 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| 
-
-
-
-
+| Page | Mobile | Tablet | Desktop | Notes |
+| --- | --- | --- | --- | --- |
+| Index | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_index.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_index.png) | Works as expected [screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_index.png) | Works as expected |
+| Contact | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_contact.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_contact.png) | ![screenshot](documentation/testing/responsiveness/desktop/desktop_responsiveness_contact.png) | Works as expected |
+| Newsletter | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_newsletter.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_newsletter.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_newsletter.png) | Works as expected |
+| Signup | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_sign_up.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_sign_up.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_sign_up.png) | Works as expected |
+| Login | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_login.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_login.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_login.png) | Works as expected |
+| Logout | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_logout.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_logout.png) | Works as expected |
+| Profile | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_profile_detail.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_detail.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_post_detail.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_edit.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_edit.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_post_edit.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_delete.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_delete.png) | ![screenshot](documentation/testing/responsiveness/desktop/tablet_responsiveness_delete.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_profile_detail.png) | ![screenshot](documentation/testing/responsiveness/tablet/tablet_responsiveness_post_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -329,9 +331,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Login | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_login.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_login.png) | Works as expected |
 | Logout | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_logout.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_logout.png) | Works as expected |
 | Profile | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_profile_detail.png) | Works as expected |
-| Post Edit | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_edit.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_edit.png) | Works as expected |
-| Post Delete | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_post_delete.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_delete.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/testing/lighthouse/mobile/lighthouse_mobile_profile_detail.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_profile_detail.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_edit.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_edit.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_delete.png) | ![screenshot](documentation/testing/lighthouse/desktop/lighthouse_desktop_post_delete.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/testing/responsiveness/mobile/mobile_responsiveness_post_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
 
 
 ## Defensive Programming
