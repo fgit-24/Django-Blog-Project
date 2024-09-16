@@ -4,10 +4,8 @@ from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db import IntegrityError
-from .forms import NewsletterForm
-from .models import NewsletterSubscriber
-from .forms import ContactForm
-from .models import ContactMessage
+from .forms import NewsletterForm, ContactForm
+from .models import NewsletterSubscriber, ContactMessage
 import os
 
 
@@ -20,9 +18,7 @@ def sign_up(request):
             return redirect('users-login')
     else:
         form = SignUpForm()
-    context = {
-        'form': form,
-    }
+    context = {'form': form}
     return render(request, 'users/sign_up.html', context)
 
 
@@ -31,7 +27,9 @@ def profile(request):
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST or None, instance=request.user)
         p_form = ProfileUpdateForm(
-            request.POST or None, request.FILES or None, instance=request.user.profilemodel)
+            request.POST or None, request.FILES or None,
+            instance=request.user.profilemodel
+        )
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
@@ -56,7 +54,9 @@ def newsletter(request):
             return redirect('newsletter')
     else:
         form = NewsletterForm()
-    return render(request, 'users/newsletter.html', {'form': form})
+    return render(
+        request, 'users/newsletter.html', {'form': form}
+    )
 
 
 def contact(request):
@@ -64,11 +64,10 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your message has been sent successfully!')
+            messages.success(request, 'Sent successfully!')
             return redirect('contact')
     else:
         form = ContactForm()
-    
-    return render(request, 'users/contact.html', {'form': form})
-
-
+    return render(
+        request, 'users/contact.html', {'form': form}
+    )
