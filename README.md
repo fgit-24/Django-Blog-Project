@@ -285,16 +285,15 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Page | Google Chrome | Microsoft Edge | Mozialla Firefox | Notes |
 | --- | --- | --- | --- | --- |
-| Index | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_index.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Contact | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_contact.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_newsletter.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Signup | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_sign_up.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Login | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_login.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Logout | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_logout.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Profile | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Edit | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_edit_post.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Delete | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_delete_post.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
-| Post Detail | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile_detail.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Works as expected |
+| Index | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_index.png) | ![screenshot](documentation/testing/firefox/mozilla_index.png) | Works as expected |
+| Contact | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_contact.png) | ![screenshot](documentation/testing/firefox/mozilla_contact.png) | Works as expected |
+| Signup | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_sign_up.png) | ![screenshot](documentation/testing/firefox/mozilla_signup.png) | Works as expected |
+| Login | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_login.png) | ![screenshot](documentation/testing/firefox/mozilla_login.png) | Works as expected |
+| Logout | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_logout.png) | ![screenshot](documentation/testing/firefox/mozilla_logout.png) | Works as expected |
+| Profile | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile.png) | ![screenshot](documentation/testing/firefox/mozilla_profile.png) | Works as expected |
+| Post Edit | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_edit_post.png) | ![screenshot](documentation/testing/firefox/mozilla_post_detail.png) | Works as expected |
+| Post Delete | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_delete_post.png) | ![screenshot](documentation/testing/firefox/mozilla_post_delete.png) | Works as expected |
+| Post Detail | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/testing/edge/edge_profile_detail.png) | ![screenshot](documentation/testing/firefox/mozilla_post_detail.png) | Works as expected |
 
 
 ## Responsiveness
