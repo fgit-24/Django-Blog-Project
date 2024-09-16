@@ -1,5 +1,6 @@
 asgiref==3.8.1
 cloudinary==1.41.0
+coverage==7.6.1
 crispy-bootstrap4==2024.1
 dj-database-url==2.2.0
 Django==4.2.15

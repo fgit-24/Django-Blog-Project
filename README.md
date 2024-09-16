@@ -184,7 +184,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | templates | sign_up.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 
-
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.

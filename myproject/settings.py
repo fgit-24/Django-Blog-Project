@@ -34,10 +34,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['8000-fgit24-djangoblogprojec-2120s04d3ik.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-fgit24-djangoblogprojec-2120s04d3ik.ws.codeinstitute-ide.net', 'django-project-postit-04c21e951999.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-fgit24-djangoblogprojec-2120s04d3ik.ws.codeinstitute-ide.net',
+    'https://8000-fgit24-djangoblogprojec-2120s04d3ik.ws.codeinstitute-ide.net', 'https://django-project-postit-04c21e951999.herokuapp.com'
 ]
 
 # Application definition
