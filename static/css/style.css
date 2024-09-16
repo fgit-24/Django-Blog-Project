@@ -1,5 +1,5 @@
 .cover {
-    background: url('static/images/background.png')
+    background: url('../images/background.png')
 }
 
 main, #alerts {

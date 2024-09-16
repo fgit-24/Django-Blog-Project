@@ -117,6 +117,69 @@ INSTALLED_APPS = [
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
+
+```mermaid
+erDiagram
+    USER {
+        int id
+        string username
+        string email
+        string password
+        string first_name
+        string last_name
+        boolean is_staff
+        boolean is_active
+        boolean is_superuser
+        datetime last_login
+        datetime date_joined
+    }
+
+    PROFILEMODEL {
+        int id
+        string image
+        int user_id
+    }
+
+    CONTACTMESSAGE {
+        int id
+        string name
+        string email
+        string subject
+        string message
+        datetime sent_at
+        boolean is_read
+    }
+
+    NEWSLETTERSUBSCRIBER {
+        int id
+        string email
+        string name
+        datetime subscribed_at
+    }
+
+    POSTMODEL {
+        int id
+        string title
+        string content
+        int author_id
+        datetime date_created
+    }
+
+    COMMENT {
+        int id
+        string content
+        int user_id
+        int post_id
+    }
+
+    USER ||--o| PROFILEMODEL: "has"
+    USER ||--o| COMMENT: "writes"
+    POSTMODEL ||--o| COMMENT: "has"
+    USER ||--o| POSTMODEL: "writes"
+```
+
+source: [mermaid](https://mermaid.live/edit#pako:eNqVVNuOgjAQ_RXSZ_0B37x0NyYqG8HsCwkZYcS60Jp2WLNR_32LshIsJixP7czp9Mw5Q88sUSmyEUM9E5BpKCLp2W8T8LV3vq-rT0jyRNrsDWkhM680qCUU6CSwAJE70SMYc1LarbMT2lDcWSkHJ7NVKkeQnjCxIdjtOjOQkPh-cag8oq6oN9kUCEkUeL8uV5mQHclqER-UkFi3cI1q2Mfaf5sv-NKf8UUP3UQBGbZRFZ9YPNed-qtwPA2XPAjG77xH5X-4YcrtARNy4gUa06L36N-gpBioU1SN8Ex-xT-DBQ9Dvg42k2C6nk96DVU323ZjDaVyaxIttpg-iDWm-EHY1xESlLvCJUqS7bl9Gkraq8Yrd0ISqwWha-VyyVdhDy6dt7bm4y94VHZanaG5_byXy3CoLq3BHHkR24OJmAuryVWIkxaED1CjoYt8UetxpF2NDViB2nqb2ufmJkLEaI_WVVYBU9BfFexqcVZhFfzIhI1IlzhgWpXZno12kBu7K4-VyvVzVUevvw4XcS0)
+
 ## Testing
 
 ### Navigation
