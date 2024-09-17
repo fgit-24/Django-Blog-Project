@@ -7,8 +7,7 @@ Users can sign up with their username and email address to post what’s on thei
 In addition, this platform includes a contact form and allows users to sign up for a newsletter.
 
 Mockup Image
-![screenshot](documentation/mockup.png)
-https://ui.dev/amiresponsive?url=https://django-project-postit-04c21e951999.herokuapp.com/
+![screenshot](documentation/images/amIresponsive.png)
 
 
 # UX
@@ -384,7 +383,6 @@ Forms:
 | | Content message in textarea | Field will accept freeform text | Pass | |
 | | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
 | | Click on the Delete button | User will be redirected to the edit profile page | Pass | |
-
 
 
 ## Unfixed Bugs
