@@ -58,12 +58,20 @@ My focus was on implementing CRUD-functionality.
 CRUD stands for 'create, read, update, and 
  delete' which are the four basic operations used in web applications to manage data.
  
- In my project, these operations allow users to:
+In my project, these operations allow users to:
 
 - Create new entries (like adding a new blog post).
 - Read or view existing entries (like viewing all blog posts).
 - Update existing entries (like editing a post).
 - Delete entries (like removing a post).
+
+
+In addition, the page features a contact form and a newsletter section.
+
+| Newsletter Section                                | Contact Form                                   |
+|--------------------------------------------------|------------------------------------------------|
+| ![Newsletter Section](documentation/images/feature-newsletter.png) | ![Contact Form](documentation/images/feature-contact.png) |
+
 
 ### Future Features
 
@@ -424,17 +432,13 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `AWS_ACCESS_KEY_ID` | user's own value |
-| `AWS_SECRET_ACCESS_KEY` | user's own value |
+| `CLOUDINARY_API_KEY` | user's own value |
+| `CLOUDINARY_API_SECRET` | user's own value |
+| `CLOUDINARY_CLOUD_NAME` | user's own value |
+| `CLOUDINARY_URL` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | user's own value |
-| `EMAIL_HOST_USER` | user's own value |
 | `SECRET_KEY` | user's own value |
-| `STRIPE_PUBLIC_KEY` | user's own value |
-| `STRIPE_SECRET_KEY` | user's own value |
-| `STRIPE_WH_SECRET` | user's own value |
-| `USE_AWS` | True |
 
 Heroku needs three additional files in order to deploy properly.
 
@@ -493,16 +497,12 @@ Sample `env.py` file:
 
 ```python
 import os
-
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
+os.environ.setdefault("CLOUDINARY_API_KEY", "user's own value")
+os.environ.setdefault("CLOUDINARY_API_SECRET", "user's own value")
+os.environ.setdefault("CLOUDINARY_CLOUD_NAME", "user's own value")
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
-os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
-os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
 os.environ.setdefault("SECRET_KEY", "user's own value")
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
-os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
-os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
